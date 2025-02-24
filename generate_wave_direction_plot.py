@@ -54,6 +54,6 @@ for period, (start_date, end_date) in time_periods.items():
 
         # Plot the wave direction using quiver
         plt.quiver(lons, lats, u, v, transform=ccrs.PlateCarree())
-        plt.title(f'Mean Wave Direction on {str(time)[:7]}')  # Only show year and month
+        plt.title(f'Mean Wave Direction on {str(time)[:7]}')  
         plt.savefig(os.path.join(output_dir, f'wave_direction_{i:04d}.png'))
         plt.close()

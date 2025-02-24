@@ -29,11 +29,11 @@ for period, (start_date, end_date) in time_periods.items():
         ax = plt.axes(projection=ccrs.PlateCarree())
         ax.coastlines()
         ax.set_xticks(range(-180, -50, 60), crs=ccrs.PlateCarree())
-        ax.set_xlim(-180, -50)  # Crop longitude to remove the white area
+        ax.set_xlim(-180, -50)  
         ax.set_yticks(range(-90, 90, 30), crs=ccrs.PlateCarree())
         ax.set_xlabel('Longitude')
         ax.set_ylabel('Latitude')
         data_for_time['sst'].plot(ax=ax, vmin=270, vmax=315,cbar_kwargs={'shrink': 0.8, 'aspect': 30})  # Set colorbar limits
-        plt.title(f'SST for {str(time)[:7]}')  # Only show year and month
+        plt.title(f'SST for {str(time)[:7]}')  
         plt.savefig(os.path.join(output_dir, f'sst_{i:04d}.png'))
         plt.close()
