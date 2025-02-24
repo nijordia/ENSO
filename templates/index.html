@@ -47,6 +47,17 @@
             line-height: 1.6;
             color: #333;
         }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #003366;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -108,6 +119,9 @@
                 </p>
             </div>
         </div>
+
+        <h2>Download Master Thesis</h2>
+        <a href="{{ url_for('static', filename='Master_Thesis_Nicolas_J_Aguilar.pdf') }}" class="download-button" download>Download Master Thesis</a>
 
         <h2>Citation</h2>
         <p>
