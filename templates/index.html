@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ENSO phenomenon in the Eastern Pacific</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #003366;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .videos {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .text {
+            width: 35%;
+            text-align: left;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The ENSO phenomenon in the Eastern Pacific</h1>
+        
+        <h2>ENSO's Economic Impact</h2>
+        <p>
+            Extreme weather events such as ENSO significantly impact global economies, particularly in regions 
+            like Peru. The 1997-98 El Niño caused widespread devastation, with heavy rains leading to floods and 
+            landslides, disrupting economic activities and increasing financial stress on microfinance institutions (MFIs). 
+            While early events saw MFIs struggling with loan defaults, improved risk management and client diversification 
+            strategies helped mitigate the impact of the 2015-16 event. These changes highlight the adaptive capacity of 
+            financial institutions in the face of climate variability.
+        </p>
+        
+        <h2>ENSO Episode 1997-1998</h2>
+        <div class="video-container">
+            <div class="videos">
+                <video controls>
+                    <source src="{{ url_for('movie', filename='sst_movie_1997_1998.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="{{ url_for('movie', filename='wave_direction_movie_1997_1998.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text">
+                <p>
+                    The 1997-98 ENSO event was one of the strongest on record, bringing severe floods and landslides 
+                    to Peru. It led to significant economic disruptions, affecting agriculture, infrastructure, and finance. 
+                    Microfinance institutions struggled with high loan defaults as borrowers faced financial distress due 
+                    to property damage and crop losses. Government intervention was necessary to stabilize the financial 
+                    sector and aid recovery efforts.
+                </p>
+            </div>
+        </div>
+        
+        <h2>ENSO Episode 2015-2016</h2>
+        <div class="video-container">
+            <div class="videos">
+                <video controls>
+                    <source src="{{ url_for('movie', filename='sst_movie_2015_2016.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="{{ url_for('movie', filename='wave_direction_movie_2015_2016.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text">
+                <p>
+                    Unlike the 1997-98 ENSO, the 2015-16 event, while still strong, had a relatively lower financial impact 
+                    on Peruvian microfinance institutions. Over the years, MFIs diversified their portfolios and adopted better 
+                    risk management strategies. Additionally, advancements in climate prediction allowed for early 
+                    interventions, reducing overall economic damage. Despite ongoing challenges, the financial sector 
+                    demonstrated greater resilience.
+                </p>
+            </div>
+        </div>
+
+        <h2>Citation</h2>
+        <p>
+            Hersbach, H., Bell, B., Berrisford, P., Biavati, G., Horányi, A., Muñoz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Thépaut, J-N. (2023): ERA5 hourly data on pressure levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS), DOI: 10.24381/cds.bd0915c6 (Accessed on 22-12-2025)
+        </p>
+    </div>
+</body>
+</html>
